@@ -30,6 +30,7 @@ for name, peer in pairs(site.mesh_vpn.wireguard.peers()) do
 		enabled = true,
 		endpoint = peer.endpoint,
 		publickey = peer.publickey,
+		broker = peer.broker,
 		link_address = peer.link_address,
 	})
 end
